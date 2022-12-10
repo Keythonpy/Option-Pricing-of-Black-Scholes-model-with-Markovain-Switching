@@ -150,6 +150,12 @@ exact.change_para(para)
 # Simulate continuous time markov chain with gillespie algorithm
 # Varying dt
 class sde_ms():
+
+    """
+        Stochastic differential equation with Markovian switching 
+        "sde" can be plugged in with not only Black-Scholes model but
+        also other stochastic differential equation 
+    """
     def __init__(self, sde, t0, t1, S0, q_mat, current_state, para, stepNos, dt = None):
         # bs: black-scholes algorithm
         # t0: starting time
